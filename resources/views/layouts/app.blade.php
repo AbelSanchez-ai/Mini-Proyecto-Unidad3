@@ -25,6 +25,7 @@
                     @guest
                     <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Registrarse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('products.index') }}">Productos</a></li>
                     @endguest
                     @auth
                     <li class="nav-item"><a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a></li>
