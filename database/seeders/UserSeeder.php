@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
         User::factory()->create([
             'name' => 'Admin User',
             'email' => 'admin@example.com',
-            'password' => Hash::make('password'), // Cambia 'password' por una contraseña segura
+            'password' => Hash::make('nimda'), // Cambia 'password' por una contraseña segura
             'role' => 'administrador',
         ]);
 
@@ -25,7 +25,15 @@ class UserSeeder extends Seeder
         User::factory()->create([
             'name' => 'Gerente User',
             'email' => 'gerente@example.com',
-            'password' => Hash::make('password'), // Cambia 'password' por una contraseña segura
+            'password' => Hash::make('gerente'), // Cambia 'password' por una contraseña segura
+            'role' => 'gerente',
+        ]);
+
+        // Crear Gerente
+        User::factory()->create([
+            'name' => 'Cliente User',
+            'email' => 'cliente@example.com',
+            'password' => Hash::make('etneilc'), // Cambia 'password' por una contraseña segura
             'role' => 'gerente',
         ]);
 
